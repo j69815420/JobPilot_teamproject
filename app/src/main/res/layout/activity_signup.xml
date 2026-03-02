@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <!-- 아이디 입력 + 중복확인 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:text="아이디" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_signup_id"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_id_ligtgray"
+                 />
+
+            <android.widget.Button
+                android:id="@+id/btn_check_duplicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중복확인"
+                android:layout_marginLeft="13dp"
+                android:textColor="#7866D3"
+                android:backgroundTint="@null"
+                android:background="@drawable/bg_duplicate"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 비밀번호 입력 -->
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:text="비밀번호" />
+
+        <EditText
+            android:id="@+id/et_signup_password"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_id_ligtgray"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp" />
+
+        <!-- 비밀번호 확인 -->
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:text="*비밀번호 확인" />
+
+        <EditText
+            android:id="@+id/et_signup_password_confirm"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_id_ligtgray"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp" />
+
+        <!-- 이메일 입력 -->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#595959"
+            android:text="이메일" />
+
+        <EditText
+            android:id="@+id/et_signup_email"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_id_ligtgray"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp" />
+
+        <!-- 이메일 도메인 선택 (아이콘 + 스피너) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_at_icon"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:contentDescription="이메일 도메인 아이콘"-->
+<!--                android:src="@drawable/ic_launcher_foreground"-->
+<!--                android:layout_marginTop="20dp"/>-->
+            <TextView
+                android:layout_width="51dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:text="@"
+                android:textColor="#595959"
+                android:textSize="32sp" />
+
+            <Spinner
+                android:id="@+id/spinner_email_domain"
+                android:layout_width="260dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="21dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_arrow_down"/>
+        </LinearLayout>
+
+
+        <!-- 회원가입 버튼 -->
+        <android.widget.Button
+            android:id="@+id/btn_signup"
+            android:layout_marginTop="144dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="회원가입"
+            android:textColor="@color/white"
+            android:backgroundTint="@null"
+            android:background="@drawable/bg_all_purple" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#7357FF</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dpurple">#5E35B1</color>
+    <color name="gray_light">#F2F2F2</color>
+    <color name="selectedColor">#8F79FF</color>  <!-- 선택된 아이템 색상 (빨강) -->
+    <color name="unselectedColor">#ADADAD</color> <!-- 비활성 색상 (회색) -->
+    <color name="dark_gray">#575757</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#FF9807</color>
+
+
+</resources>

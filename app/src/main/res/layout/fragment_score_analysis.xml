@@ -1,0 +1,324 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- 막대그래프 컨테이너 -->
+        <LinearLayout
+            android:id="@+id/barContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:weightSum="7">
+
+            <!-- bar1 ~ bar7 반복 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_margin="4dp">
+
+                <!-- 점수 -->
+                <TextView
+                    android:id="@+id/score1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00점"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/bmjua"/>
+
+                <!-- 막대 -->
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="156dp"
+                    android:background="@drawable/bg_gray_bar"
+                    android:gravity="bottom">
+
+                    <View
+                        android:id="@+id/bar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_purple_bar"
+                        android:clipToOutline="true"/>
+                </FrameLayout>
+
+                <!-- 날짜 -->
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/bmjua"/>
+            </LinearLayout>
+
+            <!-- bar2 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/score2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00점"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/bmjua"/>
+
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="156dp"
+                    android:background="@drawable/bg_gray_bar"
+                    android:gravity="bottom">
+
+                    <View
+                        android:id="@+id/bar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_purple_bar"
+                        android:clipToOutline="true"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/bmjua"/>
+            </LinearLayout>
+
+            <!-- bar3 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/score3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00점"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/bmjua"/>
+
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="156dp"
+                    android:background="@drawable/bg_gray_bar"
+                    android:gravity="bottom">
+
+                    <View
+                        android:id="@+id/bar3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_purple_bar"
+                        android:clipToOutline="true"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/bmjua"/>
+            </LinearLayout>
+
+            <!-- bar4 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/score4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00점"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/bmjua"/>
+
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="156dp"
+                    android:background="@drawable/bg_gray_bar"
+                    android:gravity="bottom">
+
+                    <View
+                        android:id="@+id/bar4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_purple_bar"
+                        android:clipToOutline="true"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/date4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/bmjua"/>
+            </LinearLayout>
+
+            <!-- bar5 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/score5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00점"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/bmjua"/>
+
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="156dp"
+                    android:background="@drawable/bg_gray_bar"
+                    android:gravity="bottom">
+
+                    <View
+                        android:id="@+id/bar5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_purple_bar"
+                        android:clipToOutline="true"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/date5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/bmjua"/>
+            </LinearLayout>
+
+            <!-- bar6 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/score6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00점"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/bmjua"/>
+
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="156dp"
+                    android:background="@drawable/bg_gray_bar"
+                    android:gravity="bottom">
+
+                    <View
+                        android:id="@+id/bar6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_purple_bar"
+                        android:clipToOutline="true"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/date6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/bmjua"/>
+            </LinearLayout>
+
+            <!-- bar7 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/score7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00점"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/bmjua"/>
+
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="156dp"
+                    android:background="@drawable/bg_gray_bar"
+                    android:gravity="bottom">
+
+                    <View
+                        android:id="@+id/bar7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_purple_bar"
+                        android:clipToOutline="true"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/date7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/bmjua"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 달력 -->
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:mcv_showOtherDates="all"
+            app:mcv_dateTextAppearance="@style/CustomDateText"
+            app:mcv_weekDayTextAppearance="@style/CustomWeekDayText"/>
+    </LinearLayout>
+</ScrollView>

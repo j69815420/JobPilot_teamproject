@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디는"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_result_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textColor="#7357FF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</LinearLayout>

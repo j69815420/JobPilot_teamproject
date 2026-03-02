@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="app_name">JobPilot</string>
+        <string name="login">로그인</string>
+        <string name="signup">회원가입</string>
+
+        <string-array name="email_domains">
+            <item>naver.com</item>
+            <item>gmail.com</item>
+            <item>daum.net</item>
+            <item>hanmail.net</item>
+        </string-array>
+    <string name="default_web_client_id"> 118375603789-abcde12345fghijk6789lmno.apps.googleusercontent.com</string>
+    </resources>
+

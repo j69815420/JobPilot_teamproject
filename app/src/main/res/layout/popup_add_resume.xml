@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bg_popup">  <!-- 전체 회색 배경 -->
+
+    <!-- 왼쪽: 직접쓰기 -->
+    <LinearLayout
+        android:id="@+id/llDirectWrite"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginEnd="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDirectWrite"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:background="@drawable/bg_white_rounded"
+            android:contentDescription="직접쓰기"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="직접쓰기"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- 오른쪽: 파일추가하기 -->
+    <LinearLayout
+        android:id="@+id/llAddFile"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddFile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:background="@drawable/bg_white_rounded"
+            android:contentDescription="파일추가하기"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파일추가하기"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9E5FF">
+
+    <!-- 상단 콘텐츠 스크롤 영역 -->
+    <ScrollView
+        android:id="@+id/scroll_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_stop_finish"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 질문 -->
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이곳에 질문이 나옵니다"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_question"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginBottom="14dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 🔵 파형 (화면 정중앙) -->
+    <LinearLayout
+        android:id="@+id/layout_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/wave1"
+            android:layout_width="6dp"
+            android:layout_height="20dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/wave_bar" />
+
+        <View
+            android:id="@+id/wave2"
+            android:layout_width="6dp"
+            android:layout_height="20dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/wave_bar" />
+
+        <View
+            android:id="@+id/wave3"
+            android:layout_width="6dp"
+            android:layout_height="20dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/wave_bar" />
+
+    </LinearLayout>
+
+    <!-- START 버튼 -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="s  t  a  r  t"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_start1"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="30dp"
+        android:stateListAnimator="@null"
+        android:elevation="0dp" />
+
+    <!-- NEXT / RECORD / FINISH 버튼 -->
+    <LinearLayout
+        android:id="@+id/layout_stop_finish"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="NEXT"
+            android:textSize="20sp"
+            android:textColor="#919191"
+            android:background="@drawable/bg_stop"
+            android:layout_marginEnd="14dp"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RECORD"
+            android:textSize="20sp"
+            android:textColor="#919191"
+            android:background="@drawable/bg_stop"
+            android:layout_marginEnd="14dp"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="FINISH"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/bg_finish"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+    </LinearLayout>
+
+</RelativeLayout>

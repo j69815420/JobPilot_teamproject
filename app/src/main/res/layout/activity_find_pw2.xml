@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="변경할 비밀번호 입력"
+            android:textSize="14sp"
+            android:textColor="#595959" />
+
+        <EditText
+            android:id="@+id/et_pw1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_id_ligtgray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최소 8글자(영어, 숫자 포함)"
+            android:textSize="10sp"
+            android:textColor="#595959" />
+
+        <!-- 이메일 입력 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text="변경할 비밀번호 재입력"
+            android:textSize="14sp"
+            android:textColor="#595959" />
+
+        <EditText
+            android:id="@+id/et_pw2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_id_ligtgray"
+            android:inputType="textEmailAddress" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="16dp"
+            android:text="비밀번호 변경"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_all_purple" />
+
+    </LinearLayout>
+</ScrollView>

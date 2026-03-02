@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 제목 -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="약관 동의"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="40dp"
+            />
+
+        <!-- 전체 약관 동의 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_all_agree"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/cbAll"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="전체 약관 동의"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:button="@drawable/checkbox_selector"/>
+        </LinearLayout>
+
+        <!-- 개별 약관 -->
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(필수) 이용약관 동의"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="32dp"
+            android:button="@drawable/checkbox_selector"/>
+
+        <CheckBox
+            android:id="@+id/cbPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(필수) 개인정보 수집 동의"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:button="@drawable/checkbox_selector"/>
+
+        <CheckBox
+            android:id="@+id/cbMarketing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(선택) 이벤트 및 마케팅 이용약관 동의"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="32dp"
+            android:button="@drawable/checkbox_selector"/>
+
+        <!-- 다음 버튼 -->
+        <android.widget.Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:backgroundTint="@null"
+            android:background="@drawable/bg_all_purple"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="80dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

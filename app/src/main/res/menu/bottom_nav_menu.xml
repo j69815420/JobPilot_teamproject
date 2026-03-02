@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_interview"
+        android:icon="@drawable/ic_interview"
+        android:title="면접" />
+
+    <item
+        android:id="@+id/nav_resume"
+        android:icon="@drawable/ic_resume"
+        android:title="자소서" />
+
+    <item
+        android:id="@+id/nav_graph"
+        android:icon="@drawable/ic_graph"
+        android:title="점수그래프" />
+
+    <item
+        android:id="@+id/nav_mypage"
+        android:icon="@drawable/ic_mypage"
+        android:title="마이페이지" />
+</menu>

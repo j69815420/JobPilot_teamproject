@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 배경 + 텍스트를 포함할 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:background="@drawable/rec_mypage"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 정보"
+                android:textColor="#5E5E5E"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"/>
+
+            <!-- 사용자 이름 (동적 변경) -->
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="김ㅇㅇ"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#6C57D3"
+                android:paddingBottom="10dp"/>
+
+            <!-- 이메일 레이아웃: 고정 텍스트 + 실제 이메일 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일 :"
+                    android:textColor="#4E4E4E"/>
+
+                <TextView
+                    android:id="@+id/tv_user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="saetbabc@gmail.com"
+                    android:textColor="#4E4E4E"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관심 분야    : 선택된 관심분야 없음 "
+                android:textColor="#4E4E4E"
+                android:paddingTop="5dp"/>
+
+            <!-- 내 정보 변경 TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 정보 변경 &gt;"
+                android:paddingTop="18dp"
+                android:paddingLeft="250dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/tv_edit_info"/>
+        </LinearLayout>
+
+        <!-- 알림 섹션 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="50dp"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingLeft="2dp"
+                android:text="알림"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <Switch
+                android:id="@+id/switch_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="250dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5dp"
+            android:paddingBottom="30dp"
+            android:text="피드백 및 문의"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보 및 약관"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:paddingBottom="30dp"
+            android:paddingLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:paddingBottom="30dp"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5dp"/>
+
+        <Button
+            android:id="@+id/delete_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원탈퇴"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5dp"/>
+    </LinearLayout>
+</ScrollView>

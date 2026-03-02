@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 인터넷 권한 (Firebase, Kakao SDK 모두 필요) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--녹음 권한 추가 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+
+    <application
+        android:name=".KakaoLogin"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Googlelogin"
+        tools:targetApi="31">
+
+        <!-- Kakao 로그인 리다이렉트 처리 액티비티 -->
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Redirect URI: kakao{NATIVE_APP_KEY}://oauth -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakaofcb137cc3f4c089c47b2f24471cd88ee" />
+            </intent-filter>
+        </activity>
+
+        <!-- 앱 시작 액티비티 (LoginActivity) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 앱 내부 화면들 -->
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainFragment" />
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".FindPasswordActivity" />
+        <activity android:name=".NavigationActivity" android:exported="true" />
+        <activity android:name=".TermsActivity" />
+        <activity android:name=".FindIdActivity" />
+        <activity android:name=".ShowIdActivity" />
+        <activity android:name=".EmailVerificationActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".LiveModeActivity" />
+        <activity android:name=".LiveModeScoreActivityForFeedBack" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".LiveModeScoreActivity" />
+        <activity android:name=".DeleteAccountActivity" />
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".ChatScoreActivity"/>
+        <activity android:name=".MyInfoEditActivity"/>
+        <activity android:name=".InquiryActivity" />
+        <activity android:name=".InterestActivity"/>
+        <activity android:name=".LoadingActivity" />
+        <activity android:name=".ResumeFeedbackActivity" />
+
+        <!-- Firebase 서비스 메타데이터는 Gradle 플러그인에 의해 자동 삽입됨 -->
+    </application>
+
+</manifest>
