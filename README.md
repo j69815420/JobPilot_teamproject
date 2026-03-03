@@ -1,1 +1,1 @@
-<h2>JobPilot</h2>
+<h1>JobPilot</h1>
