@@ -19,7 +19,7 @@
 - 카테고리별 면접 질문 데이터를 저장 및 질문 제공 기능 구현
 - AI 평가 점수 및 피드백 결과 저장 및 항목별 조회 기능 구현
 - 자기소개서 저장 · 수정 · 삭제 기능 구현
-## 3. 기술 스택
+## 🧑‍💻기술 스택
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/python-EE4B4B?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/FLASK-grey?style=for-the-badge&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/OpenAI-6B4ECC?style=for-the-badge&logo=openai&logoColor=white"/> <img src="https://img.shields.io/badge/FIGMA-D2432A?style=for-the-badge&logo=figma&logoColor=white"/><br> <img src="https://img.shields.io/badge/FIREBASE-yellow?style=for-the-badge&logo=firebase&logoColor=white"/> <img src="https://img.shields.io/badge/ANDROID-GREEN?style=for-the-badge&logo=android&logoColor=white"/> <img src="https://img.shields.io/badge/GITHUB-black?style=for-the-badge&logo=github&logoColor=white"/>
 ## 4. 시스템 구조
 <img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/aa5d243e-e2dd-4c3c-89b8-2d8b78ca10cc" />
